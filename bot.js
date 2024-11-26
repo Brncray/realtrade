@@ -171,6 +171,7 @@ export class Bot extends Client {
       const command = await import(`./${cmdFi}`);
       this.cmds.set(command.data.name, command);
       commandArray.push(command.data);
+      console.log(command.data.name)
     }
     await this?.application?.commands?.set(commandArray);
     console.log(`Slash commands uploaded`);

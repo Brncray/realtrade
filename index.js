@@ -8,6 +8,11 @@ process.on("unhandledRejection", (e) => console.log("[ UNHANDLED REJECTION ] →
     const client = new Bot({
         intents: [
             GatewayIntentBits.Guilds, 
+            GatewayIntentBits.GuildMessages,
+            GatewayIntentBits.GuildMembers,
+            GatewayIntentBits.MessageContent,
+            GatewayIntentBits.GuildVoiceStates,
+            GatewayIntentBits.GuildPresences,
         ],
     });
     client.settings = {

@@ -3,7 +3,7 @@ async function presence(client) {
     status: "online",
     activities: [
       {
-        name: `discord.gg/test`,
+        name: `the Depths`,
         type: 3,
       },
     ],
